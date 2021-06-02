@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <b-navbar class="is-primary">
+    <b-navbar>
       <template #brand>
         <b-navbar-item tag="router-link" :to="{ path: '/' }">
           <img
@@ -8,17 +8,28 @@
             alt="Lightweight UI components for Vue.js based on Bulma"
           >
         </b-navbar-item>
+        <a>asdadas</a>
       </template>
 
       <template #end>
-        <div class="testing"> teste</div>
-        <b-navbar-item class="testing" href="#">
+        <b-navbar-item>
+          <b-field>
+              <b-switch v-model="$colorMode.preference"
+                  true-value="dark"
+                  false-value="ligth">
+                  {{ $colorMode.preference }}-mode
+              </b-switch>
+          </b-field>
+        </b-navbar-item>
+        <b-navbar-item>
           {{ language['presentation'] }}
         </b-navbar-item>
-        <b-navbar-item href="#">
+
+        <b-navbar-item>
           {{ language['portfolio'] }}
         </b-navbar-item>
-        <b-navbar-dropdown label="Info">
+
+        <b-navbar-dropdown label="Info" :collapsible="true">
           <b-navbar-item @click="changeLanguage('pt_BR')">
             Português Brasil
           </b-navbar-item>
