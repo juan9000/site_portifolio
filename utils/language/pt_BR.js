@@ -1,4 +1,6 @@
 const pt_BR = {
+	"language":
+		"Português Brasil",
 	"name":
 		"Juan Matheus dos Santos Fidelis",
 	"presentation":

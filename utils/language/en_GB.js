@@ -1,6 +1,8 @@
 const en_GB = {
+	"language":
+		"English",
 	"name":
-		"piroca",
+		"Juan Matheus dos Santos Fidelis",
 	"presentation":
 		"Presentation",
 	"portfolio":

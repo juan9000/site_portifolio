@@ -35,60 +35,32 @@ body {
   background-color: var(--bg);
   color: var(--color);
 }
-// a {
-//   color: var(--color-primary);
-// }
 
-// .navbar, .navbar-menu {
-//   background-color: var(--bg);
-//   transition: background-color 0.3s;
-//   color: var(--color);
-// }
+.secondary-background {
+  background-color: var(--bg-secondary);
+}
 
-// .navbar-burger {
-//   color: var(--color);
-// }
 .navbar-burger:hover {
   color: var(--color);
   background-color: var(--bg-hover);
 }
 
-// .navbar-item {
-//   color: var(--color);
-// }
-
-// .navbar-link {
-//   color: var(--color);
-// }
-
-// a.navbar-item:focus, a.navbar-item:focus-within, 
-// a.navbar-item:hover, a.navbar-item.is-active, 
-// .navbar-link:focus, .navbar-link:focus-within, 
-// .navbar-link:hover, .navbar-link.is-active {
-//   background-color: var(--bg-hover);
-//   color: var(--color);
-// }
-
-// .navbar-link:hover {
-//   background-color: var(--bg-hover);
-// }
-
 $navbar-background-color: var(--bg);
-
 $navbar-item-color: var(--color);
 $navbar-item-active-color: var(--color);
 $navbar-item-hover-color: var(--color);
 $navbar-item-hover-background-color: var(--bg-hover);
-
 $navbar-burger-color: var(--color);
-
 $navbar-tab-hover-background-color: var(--bg-hover);
-
 $navbar-dropdown-background-color: var(--bg);
 $navbar-dropdown-item-hover-color: var(--color);
 $navbar-dropdown-item-hover-background-color: var(--bg-hover);
 $navbar-dropdown-item-active-background-color: var(--bg-hover);
 $navbar-dropdown-border-top: var(--bg-secondary);
+
+.navbar-link a, .navbar-link a:hover {
+  color: var(--color);
+}
 
 .field {
   margin: 0;
